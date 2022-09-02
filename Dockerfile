@@ -1,7 +1,7 @@
 FROM webdevops/php-nginx:7.4
 
 # Install Laravel framework system requirements (https://laravel.com/docs/8.x/deployment#optimizing-configuration-loading)
-RUN apt-get oniguruma-dev postgresql-dev libxml2-dev
+RUN apt-get install oniguruma-dev postgresql-dev libxml2-dev
 RUN docker-php-ext-install \
         bcmath \
         ctype \
